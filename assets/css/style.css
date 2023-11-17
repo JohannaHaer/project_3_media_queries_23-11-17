@@ -15,6 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -34,7 +35,6 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: green;
     min-width: 320px;
 }
 
@@ -44,7 +44,6 @@ body {
     align-items: center;
     width: 375px;
     border: 1px solid black;
-    height: 100vh;
 }
 
 header {
@@ -100,7 +99,18 @@ header {
     gap: 20px;
     width: 100%;
     color: var(--white-color);
+}
+
+.landing-page h1 {
     font-family: 'Nixie-Regular';
+    font-size: 39px;
+    font-weight: lighter;
+}
+
+.landing-page p {
+    font-family: 'Alegreya-Regular';
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* Main */
@@ -110,26 +120,60 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 10px;
 }
 
 .portfolio {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
 }
 
 .portfolio div h2 {
     font-family: 'Alegreya-Sans-Medium';
     color: var(--font-color-green);
-    font-size: 30px;
-    font-weight: lighter;
+    font-size: 36px;
+    font-weight: 100;
 }
 
 .portfolio div p {
     font-family: Helvetica, sans-serif;
     color: var(--font-color-gray);
+    font-size: 16px;
 }
 
 .portfolio a button {
-    
+    background-color: transparent;
+    padding: 7px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
 }
+
+.portfolio a {
+    margin: -15px 0 0 -30px;
+}
+
+.picture__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.picture__section div {
+    background-color: green;
+    height: 205px;
+}
+
+.picture__section img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+

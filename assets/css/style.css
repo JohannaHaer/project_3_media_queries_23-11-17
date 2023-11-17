@@ -167,13 +167,23 @@ main {
 }
 
 .picture__section div {
-    background-color: green;
-    height: 205px;
+    background-color: var(--image-color);
+    height: 203px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .picture__section img {
     width: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    z-index: -1;
 }
 
+.picture__section button {
+    padding: 7px 10px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    margin-left: -220px;
+}                                                                                                     
